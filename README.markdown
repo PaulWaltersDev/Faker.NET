@@ -1,6 +1,8 @@
 Faker.NET
 ================================================
 
+Credit to https://github.com/jonwingfield, whose Faker.NET repository this is forked from.
+
 As much as possible, a line-for-line port of ffaker for ruby (https://github.com/EmmanuelOga/ffaker).
 
 Relies on ideas taken from Rob Conery's and Jon Wingfield's excellent sugar library (https://github.com/jonwingfield/sugar). I have just taken the idea to minimize the assembly's dependencies.
