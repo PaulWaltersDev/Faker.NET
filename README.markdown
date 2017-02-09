@@ -1,9 +1,9 @@
 Faker.NET
 ================================================
 
-Credit to https://github.com/jonwingfield, whose Faker.NET repository this is forked from.
+Credit and thanks to https://github.com/jonwingfield, whose Faker.NET repository this is forked from.
 
-As much as possible, a line-for-line port of ffaker for ruby (https://github.com/EmmanuelOga/ffaker).
+As much as possible, a line-for-line port of ffaker for ruby (https://github.com/EmmanuelOga/ffaker). With additional support for Australia.
 
 Relies on ideas taken from Rob Conery's and Jon Wingfield's excellent sugar library (https://github.com/jonwingfield/sugar). I have just taken the idea to minimize the assembly's dependencies.
 
@@ -36,8 +36,3 @@ Cleaning build output
 nant clean
 
 nant clean -D:mode=Debug
-
-
-Contrib
-------------------------------------------------
-This is my first open source project, so any and all feedback/pull requests are welcomed and requested.
