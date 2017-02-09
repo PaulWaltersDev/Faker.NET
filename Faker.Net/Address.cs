@@ -77,6 +77,17 @@ namespace Faker
             return SEC_ADDR.Rand().Numerify();
         }
 
+        // Australian Variants
+        public static string GetAusState()
+        {
+            return Aus_STATES.Rand();
+        }
+
+        public static string GetAusPostcode()
+        {
+            return Aus_POSTCODE.Rand().Numerify();
+        }
+
         // UK Variants
         public static string GetUKCounty()
         {
@@ -163,7 +174,7 @@ namespace Faker
 			return GetSecondaryAddress();
         }
 
-		[Obsolete]
+        [Obsolete]
         public static string UKCounty()
         {
 			return GetUKCounty();
@@ -180,12 +191,18 @@ namespace Faker
         {
 			return GetUKPostcode();
         }
-		
-		[Obsolete]
+
+        [Obsolete]
         public static string Neighborhood()
         {
 			return GetNeighborhood();
         }
+
+        static readonly string[] Aus_STATES = new[] {"Australian Capital Territory", "New South Wales", "Northern Territory",
+            "Queensland",  "South Australia", "Tasmania",
+            "Victoria", "Western Australia" };
+
+        static readonly string[] Aus_POSTCODE = new[] { "####" };
 
         static readonly string[] ZIP_FORMATS = new[] { "#####", "#####-####" };
 
