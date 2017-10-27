@@ -65,7 +65,7 @@ namespace Faker
         }
 
         public static string GetStreetAddress(bool includeSecondary = false){
-            var str = (FakerRandom.Rand.Next(3).Times("#")) + ("### " + GetStreetName());
+            var str = /* (FakerRandom.Rand.Next(3).Times("#")) + */ ("### " + GetStreetName());
           if (includeSecondary)
               str += " " + GetSecondaryAddress();
 
