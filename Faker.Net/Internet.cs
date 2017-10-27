@@ -149,6 +149,6 @@ namespace Faker
         private static readonly string[] BYTE; //new [] { ((0..255).to_a.map { |n| n.to_s })
         static readonly string[] HOSTS = new[] { "gmail.com", "yahoo.com", "hotmail.com" };
         static readonly string[] DISPOSABLE_HOSTS = new[] { "mailinator.com", "suremail.info", "spamherelots.com", "binkmail.com", "safetymail.info", "tempinbox.com" };
-        static readonly string[] DOMAIN_SUFFIXES = new[] { "co.uk", "com", "us", "uk", "ca", "biz", "info", "name" };
+        static readonly string[] DOMAIN_SUFFIXES = new[] { "co.uk", "com.au", "net.au", "ac.uk", "edu.au", "com", "us", "uk", "ca", "biz", "info", "name" };
     }
 }

@@ -46,6 +46,11 @@ namespace Faker
                 default: return GetSchoolGenericName() + " " + SCHOOL_TYPE.Rand() + " of " + MAJOR_NOUN.Rand();
             }
         }
+
+        public static string GetAusUni()
+        {
+            return AUS_UNI_NAME.Rand();
+        }
 		
 		[Obsolete]
         public static string DegreeShort()
@@ -93,5 +98,50 @@ namespace Faker
         static readonly string[] SCHOOL_ADJ = new[] { "International", "Global", "Polytechnic", "National" };
         static readonly string[] SCHOOL_TYPE = new[] { "School", "University", "College", "Institution", "Academy" };
         static readonly string[] SCHOOL_UNI = new[] { "University", "College" };
+
+        static readonly string[] AUS_UNI_NAME = new[]{
+                "Australian Catholic University",
+    "Australian National University",
+    "Bond University",
+    "Carnegie Mellon University - Australia",
+    "Central Queensland University",
+    "Charles Darwin University",
+    "Charles Sturt University",
+    "Curtin University",
+    "Deakin University",
+    "Edith Cowan University",
+    "Federation University Australia",
+    "Flinders University",
+    "Griffith University",
+    "James Cook University",
+    "La Trobe University",
+    "Macquarie University",
+    "Monash University",
+    "Murdoch University",
+    "Queensland University of Technology",
+    "Royal Melbourne Institute of Technology",
+    "Southern Cross University",
+    "Swinburne University of Technology",
+    "Torrens University Australia",
+    "University of Adelaide",
+    "The University of Canberra",
+    "The University of Divinity",
+    "University of Melbourne",
+    "University of New England",
+    "University of New South Wales",
+    "The University of Newcastle",
+    "The University of Notre Dame Australia",
+    "University of Queensland",
+    "University of South Australia",
+    "University of Southern Queensland",
+    "University of the Sunshine Coast",
+    "University of Sydney",
+    "University of Tasmania",
+    "University of Technology, Sydney",
+    "The University of Western Australia",
+    "Western Sydney University",
+    "University of Wollongong",
+    "Victoria University"
+        };
     }
 }

@@ -78,6 +78,11 @@ namespace Faker
         }
 
         // Australian Variants
+        public static string GetAusTown()
+        {
+            return Aus_TOWNS.Rand();
+        }
+
         public static string GetAusState()
         {
             return Aus_STATES.Rand();
@@ -201,6 +206,73 @@ namespace Faker
         static readonly string[] Aus_STATES = new[] {"Australian Capital Territory", "New South Wales", "Northern Territory",
             "Queensland",  "South Australia", "Tasmania",
             "Victoria", "Western Australia" };
+
+        static readonly string[] Aus_TOWNS = new[]{
+            "Albany",
+            "Albury-Wodonga",
+            "Alice Springs",
+            "Airlie Beach",
+            "Armidale",
+    "Bateman's Bay",
+    "Bathurst",
+    "Bogan River",
+    "Bourke",
+    "Brisbane",
+    "Broken Hill",
+    "Broome",
+    "Bundaberg",
+    "Byron Bay",
+    "Cairns",
+    "Canberra",
+    "Como",
+    "Coffs Harbour",
+    "Darwin",
+    "Derby",
+    "Dubbo",
+    "Esperance",
+    "Fremantle",
+    "Geelong",
+    "Geraldton",
+    "Gold Coast",
+    "Goulburn",
+    "Hamilton Island",
+    "Hobart",
+    "Ipswich",
+    "Katherine",
+    "Katoomba",
+    "Kempsey",
+    "Kiama",
+    "Kununurra",
+    "Launceston",
+    "Leura",
+    "Lightning Ridge",
+    "Mackay",
+    "Maitland",
+    "Margaret River",
+    "Melbourne",
+    "Mildura",
+    "Mount Isa",
+    "Newcastle",
+    "Noosa",
+    "Nowra",
+    "Orange",
+    "Parramatta",
+    "Port Adelaide",
+    "Port Augusta",
+    "Port Hedland",
+    "Rockhampton",
+    "Silverton",
+    "Strahan",
+    "Sunshine Coast",
+    "Sydney",
+    "Tamworth",
+    "Townsville",
+    "Wagga Wagga",
+    "White Cliffs",
+    "Whyalla",
+    "Wilcannia",
+    "Wollongong"
+        };
 
         static readonly string[] Aus_POSTCODE = new[] { "####" };
 

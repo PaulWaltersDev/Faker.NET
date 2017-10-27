@@ -11,6 +11,30 @@ namespace Faker.Extensions
 			return items.Select(i => i.ToString())
 						.Aggregate((acc, next) => string.Concat(acc, separator, next));
 		}
+
+        /// <summary>
+        /// Merges IEnumerables together and returns a string
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="items1"></param>
+        /// <param name="items2"></param>
+        /// <returns></returns>
+        public static IEnumerable<T> MergeWith<T>(this IEnumerable<T> items1, IEnumerable<T> items2)
+        {
+            List<T> itemsMerged = new List<T>();
+
+            foreach (T item in items1)
+            {
+                itemsMerged.Add(item);
+            }
+
+            foreach (T item in items2)
+            {
+                itemsMerged.Add(item);
+            }
+
+            return itemsMerged;
+        }
 		
         public static T Rand<T>(this IEnumerable<T> items)
         {

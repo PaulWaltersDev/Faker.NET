@@ -23,6 +23,14 @@ namespace Faker.Extensions
             return number_string.Replace('#', () => FakerRandom.Rand.Next(10).ToString().ToCharArray()[0]);
         }
 
+        /// <summary>
+        /// Replaces the # with a punctuation character from '!' to '|'
+        /// </summary>
+        public static string StrangeTextify(this string str)
+        {
+            return str.Replace('#', () => '!'.To('|').Rand());
+        }
+
         public static string Letterify(this string letter_string)
         {
             return letter_string.Replace('?', () => 'a'.To('z').Rand());
